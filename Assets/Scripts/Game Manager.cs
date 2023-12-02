@@ -35,6 +35,11 @@ public class GameManager : MonoBehaviour
         SetFood(50);
     }
 
+    public int GetHumanCount()
+    {
+        return humanCount;
+    }
+
     public void AddHuman(int human)
     {
         humanCount += human;

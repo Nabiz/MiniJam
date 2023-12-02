@@ -8,6 +8,7 @@ public class MineGame : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] TMP_Text secText;
     [SerializeField] TMP_Text clickText;
+    [SerializeField] Summary summary;
 
     int sec = 10;
     int clickCount = 0;
@@ -44,6 +45,8 @@ public class MineGame : MonoBehaviour
 
     void EndMineGame()
     {
+        summary.gameObject.SetActive(true);
+        summary.CalculateSummary(0, clickCount);
         gameObject.SetActive(false);
     }
 }

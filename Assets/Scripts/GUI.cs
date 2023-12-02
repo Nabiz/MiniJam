@@ -14,13 +14,13 @@ public class GUI : MonoBehaviour
         humanText.text = humanCount.ToString();
     }
 
-    public void SetCoalCountText(int humanCount)
+    public void SetCoalCountText(int coalCount)
     {
-        humanText.text = humanCount.ToString();
+        coalText.text = coalCount.ToString();
     }
 
-    public void SetFoodCountText(int humanCount)
+    public void SetFoodCountText(int foodCount)
     {
-        humanText.text = humanCount.ToString();
+        foodText.text = foodCount.ToString();
     }
 }

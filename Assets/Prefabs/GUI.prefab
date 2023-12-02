@@ -115,9 +115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98dae59ec30b98249a8cece28867f7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  humanText: {fileID: 0}
-  coalText: {fileID: 0}
-  foodText: {fileID: 0}
+  humanText: {fileID: 4149479045977849629}
+  coalText: {fileID: 2021240202028681180}
+  foodText: {fileID: 5891847387379119634}
 --- !u!1 &2974075511719565204
 GameObject:
   m_ObjectHideFlags: 0

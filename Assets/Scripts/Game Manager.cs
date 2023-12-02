@@ -33,8 +33,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         SetHuman(10);
-        SetCoal(200);
-        SetFood(100);
+        SetCoal(120);
+        SetFood(75);
     }
 
     public int GetHumanCount()

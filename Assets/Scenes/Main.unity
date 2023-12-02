@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 467463267212232828, guid: af548a8ee20f5d042b5e6a083cbff490, type: 3}
       propertyPath: m_text
-      value: "Z\u0142apcie tyle zwierz\u0105t ile potraficie. Mo\u017Cecie to zrobi\u0107
+      value: "Upolujcie tyle zwierz\u0105t ile potraficie. Mo\u017Cecie to zrobi\u0107
         poprzez klikni\u0119cie na nie LPM kiedy si\u0119 pojawi\u0105"
       objectReference: {fileID: 0}
     - target: {fileID: 467463267212232828, guid: af548a8ee20f5d042b5e6a083cbff490, type: 3}
@@ -1349,7 +1349,7 @@ PrefabInstance:
     - target: {fileID: 467463267212232828, guid: af548a8ee20f5d042b5e6a083cbff490, type: 3}
       propertyPath: m_text
       value: "Wykopcie tyle w\u0119gla, ile dacie rady. Kopiecie poprzez wciskanie
-        LPM tak szybko, jak mo\u017Cecie."
+        spacji tak szybko, jak mo\u017Cecie."
       objectReference: {fileID: 0}
     - target: {fileID: 467463267212232828, guid: af548a8ee20f5d042b5e6a083cbff490, type: 3}
       propertyPath: m_fontSize
@@ -5449,6 +5449,11 @@ PrefabInstance:
     - target: {fileID: 1152876444307929530, guid: e93bf367eccc54642a081108c3a75b9a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460799248514645015, guid: e93bf367eccc54642a081108c3a75b9a, type: 3}
+      propertyPath: m_text
+      value: "\u0141owy okaza\u0142y si\u0119 trudne, ale okaza\u0142y si\u0119 by\u0107
+        owocne. Powinni\u015Bmy prze\u017Cy\u0107 kilka dni dzi\u0119ki temu mi\u0119su."
       objectReference: {fileID: 0}
     - target: {fileID: 5098247362458983326, guid: e93bf367eccc54642a081108c3a75b9a, type: 3}
       propertyPath: m_Name

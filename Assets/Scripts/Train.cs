@@ -25,8 +25,9 @@ public class Train : MonoBehaviour
 
     }
 
-    void StartTrain()
+    public void StartTrain()
     {
+        GameManager.Instance.UseResources();
         animator.speed = animationSpeed;
     }
 

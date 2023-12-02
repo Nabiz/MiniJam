@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
     {
         foodCount += food;
         foodCount = Mathf.Max(foodCount, 0);
-        gui.SetFoodCountText(food);
+        gui.SetFoodCountText(foodCount);
     }
 
     void SetHuman(int human)
@@ -73,9 +73,9 @@ public class GameManager : MonoBehaviour
     {
         foodCount = food;
         foodCount = Mathf.Max(foodCount, 0);
-        gui.SetFoodCountText(food);
+        gui.SetFoodCountText(foodCount);
     }
-    void UseResources()
+    public void UseResources()
     {
         AddCoal(-coalUse);
         AddFood(-humanCount);

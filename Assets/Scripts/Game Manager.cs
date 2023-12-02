@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Train train;
     [SerializeField] Node[] nodes;
     [SerializeField] Failure failure;
+    [SerializeField] FinalNode finalNode;
 
     int humanCount;
     int coalCount;
@@ -32,8 +33,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         SetHuman(10);
-        SetCoal(100);
-        SetFood(50);
+        SetCoal(200);
+        SetFood(100);
     }
 
     public int GetHumanCount()
@@ -130,8 +131,20 @@ public class GameManager : MonoBehaviour
 
     public void NextNode()
     {
-        nodes[currentNode].showDesisionDialog();
-        currentNode++;
+        if(currentNode == 10)
+        {
+            finalNode.GameSummary();
+        }
+        else
+        {
+            nodes[currentNode].showDesisionDialog();
+            currentNode++;
+        }
+    }
+
+    public bool CheckEpicWin()
+    {
+        return (foodCount >= 50 && humanCount >= 10 && coalCount >= 50);
     }
 
 }

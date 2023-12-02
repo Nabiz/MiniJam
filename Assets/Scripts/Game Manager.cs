@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GUI gui;
     [SerializeField] Train train;
     [SerializeField] Node[] nodes;
+    [SerializeField] Failure failure;
 
     int humanCount;
     int coalCount;
@@ -83,24 +84,46 @@ public class GameManager : MonoBehaviour
     }
     public void UseResources()
     {
+        int coalUsed;
+        int foodUsed;
         if (brokenEngine)
         {
-            AddCoal(Convert.ToInt32(- coalUse * engineerBuff * 2.5));
-            AddFood(-humanCount * 2);
+            coalUsed = Convert.ToInt32(coalUse * engineerBuff * 2.5);
+            foodUsed = humanCount * 2;
+            if(coalUsed > coalCount || foodUsed > foodCount)
+            {
+                train.StopOnFail();
+                failure.ShowFailScreen();
+            }
+            else
+            {
+                AddCoal(-coalUsed);
+                AddFood(-foodUsed);
+            }
         }
         else
         {
-            AddCoal(Convert.ToInt32(-coalUse * engineerBuff));
-            AddFood(-humanCount);
+            coalUsed = Convert.ToInt32(coalUse * engineerBuff);
+            foodUsed = humanCount;
+            if (coalUsed > coalCount || foodUsed > foodCount)
+            {
+                train.StopOnFail();
+                failure.ShowFailScreen();
+            }
+            else
+            {
+                AddCoal(-coalUsed);
+                AddFood(-foodUsed);
+            }
         }
     }
 
-    public void enableEngineerBuff()
+    public void EnableEngineerBuff()
     {
         engineerBuff = 0.8f;
     }
 
-    public void breakEngine()
+    public void BreakEngine()
     {
         brokenEngine = true;
     }

@@ -12,7 +12,7 @@ public class Summary : MonoBehaviour
     
     private void setSummaryText()
     {
-        summaryText.text = "+" + Mathf.Max(food, coal).ToString();
+        summaryText.text = "Otrzymujesz " + Mathf.Max(food, coal).ToString() + "sztuk zasobu";
     }
     public void CalculateSummary(int food, int coal)
     {

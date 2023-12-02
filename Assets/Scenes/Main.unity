@@ -3986,6 +3986,7 @@ MonoBehaviour:
   - {fileID: 475393792}
   - {fileID: 1293375098}
   - {fileID: 112736307}
+  summary: {fileID: 0}
 --- !u!4 &1683079489
 Transform:
   m_ObjectHideFlags: 0
@@ -4810,6 +4811,12 @@ PrefabInstance:
     - target: {fileID: 8458169132734466919, guid: 458786b1381849f41bff8d85ee7aff92, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102291515633566441, guid: 458786b1381849f41bff8d85ee7aff92, type: 3}
+      propertyPath: m_text
+      value: "Po d\u0142ugim i m\u0119cz\u0105cym dniu uda\u0142o si\u0119 wam wykopa\u0107
+        troch\u0119 w\u0119gla. Mamy nadziej\u0119, \u017Ce wystarczy na co najmniej
+        kilka dni."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

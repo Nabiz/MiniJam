@@ -27,13 +27,18 @@ public class Train : MonoBehaviour
 
     public void StartTrain()
     {
-        GameManager.Instance.UseResources();
         animator.speed = animationSpeed;
+        GameManager.Instance.UseResources();
     }
 
     void StopTrain()
     {
         animator.speed = 0f;
         GameManager.Instance.NextNode();
+    }
+
+    public void StopOnFail()
+    {
+        animator.speed = 0f;
     }
 }

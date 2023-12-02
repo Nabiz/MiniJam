@@ -242,7 +242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3390548422174010687, guid: af548a8ee20f5d042b5e6a083cbff490, type: 3}
       propertyPath: m_text
-      value: "Z zadziwieniem patrzycie na stado jeleni, kt\xF3re w niewyt\u0142umaczalny
+      value: "Z zadziwieniem patrzycie na stado \u017Cubr\xF3w, kt\xF3re w niewyt\u0142umaczalny
         dla was spos\xF3b przetrwa\u0142y w takich warunkach. Postanawiacie na nie
         zapolowa\u0107. Lepszej okazji na to pewnie nie b\u0119dziecie mie\u0107."
       objectReference: {fileID: 0}
@@ -336,7 +336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8512798135781688178, guid: af548a8ee20f5d042b5e6a083cbff490, type: 3}
       propertyPath: m_text
-      value: Stado jeleni
+      value: "Stado \u017Cubr\xF3w"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2551,7 +2551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7552072947198914516, guid: 760566dd3e5c7ec4787cfd533d33b035, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: breakEngine
+      value: BreakEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7552072947198914516, guid: 760566dd3e5c7ec4787cfd533d33b035, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName

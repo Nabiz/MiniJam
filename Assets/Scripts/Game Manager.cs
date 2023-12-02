@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         SetHuman(10);
-        SetCoal(120);
+        SetCoal(150);
         SetFood(75);
     }
 

@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 4965497656511758851}
   - component: {fileID: 1541387514648155381}
   - component: {fileID: 8501361300416336906}
+  - component: {fileID: 9122945844045937371}
   m_Layer: 0
   m_Name: Train
   m_TagString: Untagged
@@ -233,3 +234,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &9122945844045937371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5807855386614348554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25336f7496ca454cba98e32ba06157f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

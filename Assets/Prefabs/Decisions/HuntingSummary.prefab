@@ -401,6 +401,7 @@ GameObject:
   - component: {fileID: 1075000120068275393}
   - component: {fileID: 104709184116941654}
   - component: {fileID: 7739764017125203461}
+  - component: {fileID: 4447240461675551121}
   m_Layer: 5
   m_Name: HuntingSummary
   m_TagString: Untagged
@@ -495,6 +496,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &4447240461675551121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5098247362458983326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5a87cefd6d8f046ba8f546b9dd4852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  summaryText: {fileID: 6802931997123677017}
 --- !u!1 &6869499470511106075
 GameObject:
   m_ObjectHideFlags: 0

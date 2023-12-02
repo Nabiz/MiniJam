@@ -16,7 +16,7 @@ public class Summary : MonoBehaviour
     }
     public void CalculateSummary(int food, int coal)
     {
-        this.food = food;
+        this.food = 5*food;
         this.coal = Convert.ToInt32(GameManager.Instance.GetHumanCount() * 0.1f * coal);
         setSummaryText();
     }

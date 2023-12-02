@@ -42,7 +42,7 @@ public class HuntGame : MonoBehaviour
     void EndMineGame()
     {
         summary.gameObject.SetActive(true);
-        summary.CalculateSummary(0, clickCount);
+        summary.CalculateSummary(clickCount, 0);
         gameObject.SetActive(false);
     }
 }

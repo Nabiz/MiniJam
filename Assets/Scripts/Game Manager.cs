@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -18,7 +19,7 @@ public class GameManager : MonoBehaviour
     int coalUse = 20;
 
     bool brokenEngine = false;
-    bool engineerBuff = false;
+    float engineerBuff = 1;
 
     int currentNode = 0;
 
@@ -31,7 +32,7 @@ public class GameManager : MonoBehaviour
     {
         SetHuman(10);
         SetCoal(100);
-        SetFood(25);
+        SetFood(50);
     }
 
     public void AddHuman(int human)
@@ -77,9 +78,28 @@ public class GameManager : MonoBehaviour
     }
     public void UseResources()
     {
-        AddCoal(-coalUse);
-        AddFood(-humanCount);
+        if (brokenEngine)
+        {
+            AddCoal(Convert.ToInt32(- coalUse * engineerBuff * 2.5));
+            AddFood(-humanCount * 2);
+        }
+        else
+        {
+            AddCoal(Convert.ToInt32(-coalUse * engineerBuff));
+            AddFood(-humanCount);
+        }
     }
+
+    public void enableEngineerBuff()
+    {
+        engineerBuff = 0.8f;
+    }
+
+    public void breakEngine()
+    {
+        brokenEngine = true;
+    }
+
     public void NextNode()
     {
         nodes[currentNode].showDesisionDialog();

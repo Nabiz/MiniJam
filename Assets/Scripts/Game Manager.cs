@@ -34,21 +34,21 @@ public class GameManager : MonoBehaviour
         SetFood(25);
     }
 
-    void AddHuman(int human)
+    public void AddHuman(int human)
     {
         humanCount += human;
         humanCount = Mathf.Max(humanCount, 0);
         gui.SetHumanCountText(humanCount);
     }
 
-    void AddCoal(int coal)
+    public void AddCoal(int coal)
     {
         coalCount += coal;
         coalCount = Mathf.Max(coalCount, 0);
         gui.SetCoalCountText(coalCount);
     }
 
-    void AddFood(int food)
+    public void AddFood(int food)
     {
         foodCount += food;
         foodCount = Mathf.Max(foodCount, 0);
